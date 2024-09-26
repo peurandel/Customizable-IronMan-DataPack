@@ -1,6 +1,10 @@
 {
 	"pack": {
+<<<<<<< HEAD
 		"pack_format": 41,
+=======
+		"pack_format": 48,
+>>>>>>> 51a27ab (Initial commit on main branch)
 		"description": "Peurandel's IronMan Data Pack"
 		}
 } 
