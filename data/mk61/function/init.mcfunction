@@ -12,3 +12,5 @@ scoreboard objectives add prd.ironman.weardelay2 dummy
 #beacon editor
 scoreboard objectives add prd.ironman.beacon.editor.page dummy
 scoreboard objectives add prd.ironman.beacon.editor.ui dummy
+
+#시발
