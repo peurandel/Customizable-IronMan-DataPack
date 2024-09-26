@@ -1,8 +1,4 @@
 
 summon item ~ ~1 ~ {Item:{id:beacon,components:{custom_data:{suit:0}}}}
 data modify entity @e[limit=1,sort=nearest,nbt={Item:{components:{"minecraft:custom_data":{suit:0}}}},type=item] Item.components set from entity @s data.suit
-<<<<<<< HEAD
-=======
-data remove entity @s data.suit
->>>>>>> 51a27ab (Initial commit on main branch)
 scoreboard players set @s prd.ironman.beacon.editor.page 0
