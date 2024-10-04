@@ -16,3 +16,6 @@ scoreboard objectives add prd.ironman.beacon.editor.ui dummy
 
 #score set
 scoreboard players set #100 prd.num 100
+
+#Stroage
+data modify storage prd:suit table set value {'1':'{"text":"Enable Flying"}','2':'{"text":"Infinity Energy Generating"}', '3':'{"text":"Infinity Nano Generating"}'}
