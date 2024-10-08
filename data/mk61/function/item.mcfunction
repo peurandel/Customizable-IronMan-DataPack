@@ -3,3 +3,8 @@ give @s minecraft:beacon[minecraft:custom_name='{"text":"MK61"}',minecraft:custo
 
 #Skill : {type, cost:[0,0],id,name}
 ##type : 1=attack
+
+#item
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:1}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:2}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:3}]
