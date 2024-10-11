@@ -21,7 +21,8 @@ scoreboard players set #100 prd.num 100
 data modify storage prd:suit table set value {tech:{ \
     '1': {"text":'{"text":"Enable Flying"}',"lore":'{"text":"make suit be able to fly!"}'},\
     '2':{"text":'{"text":"Infinity Energy Generating"}',"lore":'{"text":"Generating Energy eternity"}'}, \
-    '3':{"text":'{"text":"Infinity Nano Generating"}',"lore":'{"text":"Generating Nano Particle eternity"}'}}, \
+    '3':{"text":'{"text":"Infinity Nano Generating"}',"lore":'{"text":"Generating Nano Particle eternity"}'}, \
+    '4':{"text":'{"text":"Progressive Armor Frame"}',"lore":'{"text":"Give Player Resistance Effect V"}'}}, \
 skill:{ \
     '1': {"text":'{"text":"Repulsor"}',"lore":"Blast Repulsor"}, \
     '2': {"text":'{"text":"Unibeam"}',"lore":"Blast Unibeam"}, \

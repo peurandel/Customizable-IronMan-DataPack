@@ -1,0 +1,2 @@
+$execute store result score #prd.this prd.this run data get storage prd:db player.$(dummy).data.minecraft:custom_data.data.tech[{id:3}].value
+execute if score @s prd.ironman.max_nano > @s prd.ironman.nano run scoreboard players operation @s prd.ironman.nano += #prd.this prd.this
