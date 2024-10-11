@@ -18,4 +18,13 @@ scoreboard objectives add prd.ironman.beacon.editor.ui dummy
 scoreboard players set #100 prd.num 100
 
 #Stroage
-data modify storage prd:suit table set value {'1':'{"text":"Enable Flying"}','2':'{"text":"Infinity Energy Generating"}', '3':'{"text":"Infinity Nano Generating"}'}
+data modify storage prd:suit table set value {tech:{ \
+    '1': {"text":'{"text":"Enable Flying"}',"lore":'{"text":"make suit be able to fly!"}'},\
+    '2':{"text":'{"text":"Infinity Energy Generating"}',"lore":'{"text":"Generating Energy eternity"}'}, \
+    '3':{"text":'{"text":"Infinity Nano Generating"}',"lore":'{"text":"Generating Nano Particle eternity"}'}}, \
+skill:{ \
+    '1': {"text":'{"text":"Repulsor"}',"lore":"Blast Repulsor"}, \
+    '2': {"text":'{"text":"Unibeam"}',"lore":"Blast Unibeam"}, \
+    '3': {"text":'{"text":"Power Repulsor"}',"lore":"Best Repulsor"}, \
+    '2001': {"text":'{"text":"Booster"}',"lore":"Boosting Fly Speed"}, \
+    '2002': {"text":'{"text":"Fly Boom"}',"lore":"Booming while flying"}}}

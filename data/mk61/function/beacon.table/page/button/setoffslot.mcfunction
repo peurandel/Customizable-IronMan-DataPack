@@ -1,0 +1,1 @@
+$data modify entity @s data.suit.minecraft:custom_data.data.offslot set value $(slot)

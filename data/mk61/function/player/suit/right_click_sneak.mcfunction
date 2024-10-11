@@ -1,2 +1,2 @@
-execute as @s[nbt={SelectedItemSlot:8}] run return run function mk61:player/suit/off with storage prd:this
-execute as @s[nbt=!{SelectedItemSlot:8}] run return run function mk61:player/suit/skill/switch with storage prd:this
+$execute as @s[nbt={SelectedItemSlot:$(offslot)}] run return run function mk61:player/suit/off with storage prd:this
+$execute as @s[nbt=!{SelectedItemSlot:$(offslot)}] run return run function mk61:player/suit/skill/switch with storage prd:this

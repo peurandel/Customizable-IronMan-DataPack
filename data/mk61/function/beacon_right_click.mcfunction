@@ -8,6 +8,10 @@ execute store result storage prd:this dummy int 1 run attribute @s generic.luck 
 #Save beacon data in the personal storage DB
 function mk61:player/storage/set with storage prd:this
 
+#Read Beacon's Tech
+tellraw @s [{"text":"This Suit has these Techs!"}]
+data modify storage prd:this id set from storage prd:this techreader[0].id
+function mk61:beacon_right_click2 with storage prd:this
 #Remove the beacon
 item replace entity @s weapon.mainhand with air
 

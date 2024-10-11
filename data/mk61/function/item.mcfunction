@@ -5,6 +5,8 @@ give @s minecraft:beacon[minecraft:custom_name='{"text":"MK61"}',minecraft:custo
 ##type : 1=attack
 
 #item
-give @s paper[minecraft:custom_data={tech:1,suit:61,id:1}]
-give @s paper[minecraft:custom_data={tech:1,suit:61,id:2}]
-give @s paper[minecraft:custom_data={tech:1,suit:61,id:3}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:1,name:"Repulsor"}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:2,name:"Unibeam"}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:3,name:"Power Repulsor"}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:2001,name:"Fly Booster"}]
+give @s paper[minecraft:custom_data={tech:1,suit:61,id:2002,name:"Fly Boom"}]

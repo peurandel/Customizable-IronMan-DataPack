@@ -9,6 +9,7 @@ $execute store result score @s prd.ironman.max_nano run data get storage prd:db 
 execute unless items entity @s weapon.offhand *[custom_data~{prd.suit.controller:1}] run function mk61:player/suit/nostick
 
 execute store result storage prd:this slot int 1 run data get entity @s SelectedItemSlot
+$execute store result storage prd:this offslot int 1 run data get storage prd:db player.$(dummy).data.minecraft:custom_data.data.offslot
 #Actionbar
 function mk61:player/suit/actionbar with storage prd:this
 
@@ -17,7 +18,7 @@ function mk61:player/suit/actionbar with storage prd:this
 execute as @s[scores={prd.ironman.triggered=1}] run function mk61:player/suit/right_click
 
 #비행
-$execute if data storage prd:db player.$(dummy).data.minecraft:custom_data.data.tech[{tech:1}] unless predicate mk61:onground if predicate mk61:sneak run say hi
+$execute if data storage prd:db player.$(dummy).data.minecraft:custom_data.data.tech[{id:1}] unless predicate mk61:onground if predicate mk61:sneak run say hi
 
 #갑옷 입히기
 

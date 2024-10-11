@@ -1,1 +1,2 @@
 $data modify storage prd:db player.'$(dummy)'.data set from entity @s SelectedItem.components
+$data modify storage prd:this techreader set from storage prd:db player.$(dummy).data.minecraft:custom_data.data.tech
