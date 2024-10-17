@@ -13,8 +13,10 @@ give @s paper[minecraft:custom_data={tech:1,suit:61,id:4}]
 
 
 
-give @s paper[minecraft:custom_data={skill:1,suit:61,id:1,name:"Repulsor",energy:[0,10]}]
-give @s paper[minecraft:custom_data={skill:1,suit:61,id:2,name:"Unibeam",energy:[0,20]}]
-give @s paper[minecraft:custom_data={skill:1,suit:61,id:3,name:"Power Repulsor",energy:[0,30]}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:1,name:"Repulsor",energy:[0,10],damage:5}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:2,name:"Unibeam",energy:[0,20],damage:10}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:3,name:"Power Repulsor",energy:[0,30],damage:20}]
 give @s paper[minecraft:custom_data={skill:1,suit:61,id:2001,name:"Fly Booster",energy:[0,4]}]
 give @s paper[minecraft:custom_data={skill:1,suit:61,id:2002,name:"Fly Boom",energy:[10,0]}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:4,name:"Missile",energy:[25,25]}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:5,name:"Chain Grab",energy:[0,10]}]

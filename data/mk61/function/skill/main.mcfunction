@@ -1,0 +1,1 @@
+$function mk61:player/suit/skill/$(num) with storage prd:this entity
