@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,active_effects:[{id:"invisibility",duration:100000,show_particles:false}],Tags:[prd.ironman.missile,prd.entity],ArmorItems:[{},{},{},{id:"minecraft:iron_block",count:1b}]}
+execute anchored eyes run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,active_effects:[{id:"invisibility",duration:100000,show_particles:false}],Tags:[prd.ironman.missile,prd.entity],ArmorItems:[{},{},{},{id:"minecraft:iron_block",count:1b}]}
 
 #summon minecraft:cod ~ ~ ~ {NoGravity:1b,active_effects:[{id:"invisibility",duration:100000,show_particles:false}],Tags:[prd.ironman.missile,prd.entity],Passengers:[{id:"block_display",block_state:{Name:"iron_block"}}]}
 tp @e[tag=prd.ironman.missile,tag=!imID,limit=1,sort=nearest] ^ ^ ^ ~ ~

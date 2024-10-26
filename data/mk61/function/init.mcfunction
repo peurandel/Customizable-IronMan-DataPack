@@ -29,6 +29,7 @@ scoreboard players set #20 prd.num 20
 scoreboard players set #10 prd.num 10
 scoreboard players set #4 prd.num 4
 scoreboard players set #3 prd.num 3
+scoreboard players set #2 prd.num 2
 scoreboard players set #gravity prd.num 98
 
 execute positioned 0 0 0 run forceload add ~ ~

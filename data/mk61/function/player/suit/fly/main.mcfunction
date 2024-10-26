@@ -13,6 +13,16 @@ execute unless score @s prd.ironman.flyspeed matches 160.. if predicate { "condi
 execute if score @s prd.ironman.flyspeed matches 5.. if predicate { "condition": "entity_properties", "entity": "this", "predicate": { "type_specific": { "type": "player", "input": { "backward": true } } }} run scoreboard players remove @s prd.ironman.flyspeed 4
 
 execute store result storage prd:this fly.speed double 0.025 run scoreboard players get @s prd.ironman.flyspeed
+execute store result score #prd.this prd.ironman.energy run data get storage prd:this fly.speed
+
+##actionbar용 스코어 연산
+execute store result storage prd:this fly.speedac double 1 run data get storage prd:this fly.speed 20
+execute store result score #prd.this prd.ironman.flyspeed run data get storage prd:this fly.speedac
+##에너지 소모용 연산
+scoreboard players operation #prd.this prd.ironman.energy /= #2 prd.ironman.energy
+scoreboard players operation @s prd.ironman.energy -= #prd.this prd.ironman.energy
+
+##회전각용 연산
 execute store result storage prd:this fly.rotate double 0.5 run scoreboard players get @s prd.ironman.flyspeed
 scoreboard players operation #prd.distance prd.this = @s prd.ironman.flyspeed
 scoreboard players operation #prd.distance prd.this /= #3 prd.num
@@ -22,7 +32,7 @@ execute as @e[tag=prd.entity.flycore.this] at @s run function mk61:player/suit/f
 #flying
 function mk61:player/suit/fly/speed with storage prd:this fly
 
-effect give @s minecraft:slow_falling 1 0 true
+effect give @s minecraft:levitation 1 0 true
 effect give @s minecraft:jump_boost 1 1 true
 
 particle flame ~ ~ ~ 0 0 0 0 1 force @a
