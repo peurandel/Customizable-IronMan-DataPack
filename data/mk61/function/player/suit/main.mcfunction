@@ -20,7 +20,8 @@ execute as @s[scores={prd.ironman.triggered=1}] run function mk61:player/suit/ri
 #Effects
 $execute if items entity @s armor.head *[minecraft:custom_data~{suit:61}] if items entity @s armor.chest *[minecraft:custom_data~{suit:61}] if items entity @s armor.legs *[minecraft:custom_data~{suit:61}] if items entity @s armor.feet *[minecraft:custom_data~{suit:61}] run function mk61:player/suit/wear/effect {dummy:$(dummy)}
 #비행
-$execute if data storage prd:db player.$(dummy).data.minecraft:custom_data.data.tech[{id:1}] unless predicate mk61:onground if predicate mk61:sneak run say hi
+$execute as @s[tag=!prd.ironman.fly] if data storage prd:db player.$(dummy).data.minecraft:custom_data.data.tech[{id:1}] unless predicate mk61:onground if predicate mk61:sneak run function mk61:player/suit/fly/tag
+execute as @s[tag=prd.ironman.fly] run function mk61:player/suit/fly/main
 
 #갑옷 입히기
 

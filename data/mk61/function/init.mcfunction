@@ -9,6 +9,7 @@ scoreboard objectives add prd.ironman.max_nano dummy
 scoreboard objectives add prd.ironman.triggered dummy
 scoreboard objectives add prd.ironman.weardelay1 dummy
 scoreboard objectives add prd.ironman.weardelay2 dummy
+scoreboard objectives add prd.ironman.flyspeed dummy
 scoreboard objectives add prd.target dummy
 
 #grab
@@ -27,6 +28,7 @@ scoreboard players set #57 prd.num 57
 scoreboard players set #20 prd.num 20
 scoreboard players set #10 prd.num 10
 scoreboard players set #4 prd.num 4
+scoreboard players set #3 prd.num 3
 scoreboard players set #gravity prd.num 98
 
 execute positioned 0 0 0 run forceload add ~ ~
