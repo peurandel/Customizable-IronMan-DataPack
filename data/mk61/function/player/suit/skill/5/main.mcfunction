@@ -31,10 +31,10 @@ scoreboard players operation @s prd.rotatey += #prd.speed prd.num
 execute store result entity @s Rotation[1] float 0.01 run scoreboard players get @s prd.rotatey
 
 execute store result storage prd:this grab.length int 1 run scoreboard players get @s prd.length
-function mk61:player/suit/skill/5_3 with storage prd:this grab
+function mk61:player/suit/skill/5/line with storage prd:this grab
 #tellraw @a {"score": {"name": "@s","objective": "prd.velocity"}}
 
-execute as @e[tag=prd.caddle.this,limit=1] on passengers unless score @s prd.id = @e[tag=prd.caddle.this,limit=1] prd.id run function mk61:player/suit/skill/5_cut2
+execute as @e[tag=prd.caddle.this,limit=1] on passengers unless score @s prd.id = @e[tag=prd.caddle.this,limit=1] prd.id run function mk61:player/suit/skill/5/cut
 
 tag @s remove prd.grab.this
 tag @a[tag=prd.owner.this] remove prd.owner.this

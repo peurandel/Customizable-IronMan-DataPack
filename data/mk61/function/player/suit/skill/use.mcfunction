@@ -1,1 +1,1 @@
-$function mk61:player/suit/skill/slot/$(id) with storage prd:this usedskill
+$function mk61:player/suit/skill/slot/$(id)/main with storage prd:this usedskill

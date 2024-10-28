@@ -48,5 +48,12 @@ skill:{ \
     '3': {"text":'{"text":"Power Repulsor"}',"lore":"Best Repulsor"}, \
     '4': {"text":'{"text":"Missile"}',"lore":"Normal Missile"}, \
     '5': {"text":'{"text":"Chain Grab"}',"lore":"Chain Action"}, \
+    '6': {"text":'{"text":"Trap"}',"lore":"Install Trap"}, \
+    '7': {"text":'{"text":"Kinetic Blast"}',"lore":"Causing large damage to the target at a distance."}, \
+    '8': {"text":'{"text":"Crushing Grip"}',"lore":"All enemies in the target area faint for few seconds, and receive little lasting damage."}, \
+    '9': {"text":'{"text":"Chain Reaction"}',"lore":"Your attack causes general damage to the target and bounces at up to four additional targets around it, causing few damages to each."}, \
+    '10': {"text":'{"text":"Energy Shift"}',"lore":"Racing towards the enemy, inflicting some damage on all enemies in the path."}, \
+    '11': {"text":'{"text":"Apocalypse"}',"lore":"Nuclear Energy Blasting"}, \
     '2001': {"text":'{"text":"Booster"}',"lore":"Boosting Fly Speed"}, \
     '2002': {"text":'{"text":"Fly Boom"}',"lore":"Booming while flying"}}}
+    

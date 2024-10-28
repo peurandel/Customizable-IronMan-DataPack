@@ -1,18 +1,17 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:using_item",
-        "conditions": {
-            "item": {
-                "items": "minecraft:stick",
-                "components": {
-                    "custom_data": "{prd.suit.controller:1}"
-                }
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{prd.suit.controller:1}"
+          }
         }
       }
-    },
-    "rewards": {
-      "function": "mk61:controller_right_click"
     }
+  },
+  "rewards": {
+    "function": "mk61:controller_right_click"
   }
+}
