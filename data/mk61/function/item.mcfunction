@@ -20,3 +20,5 @@ give @s paper[minecraft:custom_data={skill:1,suit:61,id:2001,name:"Fly Booster",
 give @s paper[minecraft:custom_data={skill:1,suit:61,id:2002,name:"Fly Boom",energy:[10,0]}]
 give @s paper[minecraft:custom_data={skill:1,suit:61,id:4,name:"Missile",energy:[25,25]}]
 give @s paper[minecraft:custom_data={skill:1,suit:61,id:5,name:"Chain Grab",energy:[0,10]}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:6,name:"Trap",energy:[10,20],explosion:7}]
+give @s paper[minecraft:custom_data={skill:1,suit:61,id:7,name:"Kinetic Blast",energy:[100,200],damage:300,view:1}]

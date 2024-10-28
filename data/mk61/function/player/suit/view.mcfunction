@@ -1,0 +1,1 @@
+$function mk61:player/suit/skill/view/$(id)/main

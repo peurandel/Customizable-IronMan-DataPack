@@ -13,6 +13,8 @@ $execute store result storage prd:this offslot int 1 run data get storage prd:db
 #Actionbar
 $execute if items entity @s armor.head *[minecraft:custom_data~{suit:61}] run function mk61:player/suit/actionbar {dummy:$(dummy),offslot:$(offslot),slot:$(slot)}
 
+function mk61:player/suit/selecteditem with storage prd:this
+function mk61:player/suit/view with storage prd:this usedskill
 #Right Click
 ##OFF
 execute as @s[scores={prd.ironman.triggered=1}] run function mk61:player/suit/right_click
@@ -49,3 +51,5 @@ $execute store result storage prd:db player.$(dummy).data.minecraft:custom_data.
 
 
 scoreboard players reset @s prd.ironman.triggered
+
+tag @e remove prd.view.target.this
