@@ -8,11 +8,9 @@ scoreboard players add @s[x_rotation=-180..0,scores={prd.velocity=..-1}] prd.vel
 
 #진자의 가속도는 g*sin(세타), 마크 각도는 (세타-90)이므로 g*cos(세타) 필요
 ##반지름이 13.5인 원으로 13.5*cos(세타)를 구함
-execute positioned 0 0 0 align xyz run summon marker ~ ~ ~ {Tags:["prd.cos"]}
-execute store result entity @e[tag=prd.cos,type=marker,limit=1] Rotation[0] float 1 run data get entity @s Rotation[1]
-execute at @e[tag=prd.cos,type=marker] run tp @e[tag=prd.cos,type=marker] ^ ^ ^9.81
-execute store result score #prd.cos prd.num run data get entity @e[tag=prd.cos,type=marker,limit=1] Pos[2] 1
-kill @e[tag=prd.cos,type=marker]
+execute positioned 0 0 0 positioned ^ ^ ^9.81 store result score #prd.cos prd.num summon area_effect_cloud run data get entity @s Pos[2] 1
+
+
 ##가속도를 속도에 더하기
     scoreboard players operation @s prd.velocity += #prd.cos prd.num
 
@@ -24,7 +22,6 @@ scoreboard players operation #prd.speed prd.num *= #57 prd.num
 scoreboard players operation #prd.distance prd.num = @s prd.length
 scoreboard players operation #prd.distance prd.num /= #10 prd.num
 scoreboard players operation #prd.speed prd.num /= #prd.distance prd.num
-
 #nbt 수정해 실제로 회전시키기
 execute store result score @s prd.rotatey run data get entity @s Rotation[1] 100
 scoreboard players operation @s prd.rotatey += #prd.speed prd.num

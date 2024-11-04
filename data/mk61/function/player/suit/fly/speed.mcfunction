@@ -1,4 +1,6 @@
-$execute at @e[tag=prd.entity.flycore.this] run tp @e[tag=prd.entity.flycore.this] ^ ^ ^$(speed)
+#이진 재귀 tp
+execute store result score #prd.this2 prd.ironman.flyspeed run data get storage prd:this fly.speed 5
+execute as @e[tag=prd.entity.flycore.this] at @s run function mk61:player/suit/fly/raybineary
 
 execute at @e[tag=prd.entity.flycore.this] run tp @s ~ ~ ~
 

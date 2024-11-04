@@ -17,10 +17,15 @@ scoreboard objectives add prd.length dummy
 scoreboard objectives add prd.rotatey dummy
 scoreboard objectives add prd.velocity dummy
 
+#orbit editor
+scoreboard objectives add prd.ui dummy
+# for linking player to minecart
+scoreboard objectives add prd.ui.id dummy
+
 #beacon editor
 scoreboard objectives add prd.ironman.beacon.editor.page dummy
 scoreboard objectives add prd.ironman.beacon.editor.ui dummy
-
+setblock 0 -64 0 yellow_shulker_box
 #score set
 scoreboard players set #3600 prd.num 3600
 scoreboard players set #100 prd.num 100
