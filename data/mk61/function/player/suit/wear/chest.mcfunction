@@ -10,12 +10,4 @@ execute unless score @s prd.ironman.weardelay1 >= #prd.this prd.this run return 
 
 scoreboard players reset @s prd.ironman.weardelay1
 scoreboard players operation @s prd.ironman.nano -= #prd.this.cost prd.ironman.nano
-
-summon item_display ~ ~ ~ {Tags:[prd.wear]}
-$data modify entity @e[tag=prd.wear,limit=1] item set from storage prd:db player.$(dummy).data.minecraft:custom_data.data.suit.chestplate
-data modify entity @e[tag=prd.wear,limit=1] item.components.minecraft:custom_data.suit set value 61
-data modify entity @e[tag=prd.wear,limit=1] item.components.minecraft:max_damage set from storage prd:this item.cost_n
-data modify entity @e[tag=prd.wear,limit=1] item.components.minecraft:max_stack_size set value 1
-data modify entity @e[tag=prd.wear,limit=1] item.components.minecraft:damage set value 0
-item replace entity @s armor.chest from entity @e[tag=prd.wear,limit=1] container.0
-kill @e[tag=prd.wear]
+$execute summon item_display run function mk61:player/suit/wear/item_display {armor1:"chest",armor2:"chestplate",dummy:"$(dummy)"}

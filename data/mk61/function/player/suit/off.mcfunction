@@ -1,4 +1,9 @@
 tag @s remove prd.ironman
+
+#태그 뱃기기
+tag @s remove prd.ironman.fly
+scoreboard players operation .search prd.id = @s prd.id
+execute as @e[tag=prd.entity.flycore] if score @s prd.id = .search prd.id run kill @s 
 #갑옷 뱃기기
 ##헬멧
 execute store result score #prd.this prd.this run data get entity @s Inventory[{Slot:103b}].components."minecraft:damage"
@@ -28,6 +33,7 @@ $execute store result storage prd:db player.$(dummy).data.minecraft:custom_data.
 $data modify storage prd:this item_data set from storage prd:db player.$(dummy).data
 function mk61:player/suit/loot_item with storage prd:this
 title @s actionbar {"text":"OFF!","color":"red"}
+
 
 $data remove storage prd:db player.$(dummy).data
 

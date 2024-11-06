@@ -21,4 +21,3 @@ function mk61:beacon_right_click2 with storage prd:this
 #Remove the beacon
 item replace entity @s weapon.mainhand with air
 
-tag @s add IronMan
