@@ -10,5 +10,6 @@ execute unless score @s prd.ironman.weardelay1 >= #prd.this prd.this run return 
 scoreboard players reset @s prd.ironman.weardelay1
 scoreboard players operation @s prd.ironman.nano -= #prd.this.cost prd.ironman.nano
 scoreboard players operation @s prd.ironman.energy -= #prd.this.cost prd.ironman.energy
+execute store result storage prd:this item.cost_n int 1 run scoreboard players get #prd.this.cost prd.ironman.nano
 
 $execute summon item_display run function mk61:player/suit/wear/item_display {armor1:"legs",armor2:"leggings",dummy:"$(dummy)"}

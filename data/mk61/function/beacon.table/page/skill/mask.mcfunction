@@ -1,0 +1,35 @@
+#skill
+data remove block ~ ~ ~ Items
+
+item replace block ~ ~ ~ container.0 with beacon[custom_name='{"text":"Pick UP YOUR SUIT","color":"dark_purple"}',minecraft:custom_data={ui_item:{button:0}}]
+item replace block ~ ~ ~ container.1 with crafter[custom_name='{"text":"GO TO MENU","color":"dark_purple"}',minecraft:custom_data={ui_item:{button:1}}]
+
+item replace block ~ ~ ~ container.9 with lime_stained_glass_pane[custom_name='{"text":"Slot.0","color":"green"}',minecraft:custom_data={ui_item:{button:3010}}]
+item replace block ~ ~ ~ container.10 with lime_stained_glass_pane[custom_name='{"text":"Slot.1","color":"green"}',minecraft:custom_data={ui_item:{button:3011}}]
+item replace block ~ ~ ~ container.11 with lime_stained_glass_pane[custom_name='{"text":"Slot.2","color":"green"}',minecraft:custom_data={ui_item:{button:3012}}]
+item replace block ~ ~ ~ container.12 with lime_stained_glass_pane[custom_name='{"text":"Slot.3","color":"green"}',minecraft:custom_data={ui_item:{button:3013}}]
+item replace block ~ ~ ~ container.13 with lime_stained_glass_pane[custom_name='{"text":"Slot.4","color":"green"}',minecraft:custom_data={ui_item:{button:3014}}]
+item replace block ~ ~ ~ container.14 with lime_stained_glass_pane[custom_name='{"text":"Slot.5","color":"green"}',minecraft:custom_data={ui_item:{button:3015}}]
+item replace block ~ ~ ~ container.15 with lime_stained_glass_pane[custom_name='{"text":"Slot.6","color":"green"}',minecraft:custom_data={ui_item:{button:3016}}]
+item replace block ~ ~ ~ container.16 with lime_stained_glass_pane[custom_name='{"text":"Slot.7","color":"green"}',minecraft:custom_data={ui_item:{button:3017}}]
+item replace block ~ ~ ~ container.17 with lime_stained_glass_pane[custom_name='{"text":"Slot.8","color":"green"}',minecraft:custom_data={ui_item:{button:3018}}]
+
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:0}}}}} run item replace block ~ ~ ~ container.18 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3020}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:1}}}}} run item replace block ~ ~ ~ container.19 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3021}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:2}}}}} run item replace block ~ ~ ~ container.20 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3022}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:3}}}}} run item replace block ~ ~ ~ container.21 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3023}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:4}}}}} run item replace block ~ ~ ~ container.22 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3024}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:5}}}}} run item replace block ~ ~ ~ container.23 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3025}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:6}}}}} run item replace block ~ ~ ~ container.24 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3026}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:7}}}}} run item replace block ~ ~ ~ container.25 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3027}}]
+execute unless data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:8}}}}} run item replace block ~ ~ ~ container.26 with structure_void[custom_name='{"text":"OFF SUIT SLOT","color":"red"}',minecraft:custom_data={ui_item:{button:3028}}]
+
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:0}}}}} run item replace block ~ ~ ~ container.18 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:1}}}}} run item replace block ~ ~ ~ container.19 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:2}}}}} run item replace block ~ ~ ~ container.20 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:3}}}}} run item replace block ~ ~ ~ container.21 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:4}}}}} run item replace block ~ ~ ~ container.22 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:5}}}}} run item replace block ~ ~ ~ container.23 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:6}}}}} run item replace block ~ ~ ~ container.24 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:7}}}}} run item replace block ~ ~ ~ container.25 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
+execute if data entity @s {data:{suit:{"minecraft:custom_data":{data:{offslot:8}}}}} run item replace block ~ ~ ~ container.26 with barrier[custom_name='{"text":"OFF SUIT SLOT","color":"dark_red"}',minecraft:custom_data={ui_item:{}}]
