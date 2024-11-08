@@ -1,7 +1,6 @@
 [KOR] [ENG]
 
-[KOR]
-# 개인 커스텀 가능한 아이언맨 데이터팩!
+# [KOR] 개인 커스텀 가능한 아이언맨 데이터팩!
 해당 데이터팩은 아직 미완성입니다!
 
 ## 목표
@@ -27,8 +26,8 @@
 - AI 호출 : 궤도에 내장된 슈트들에 AI를 탑제하여 호출합니다. 그들은 당신의 일을 보좌할 수 있습니다.
 - 위치 탐지 : 원하는 플레이어의 위치를 탐색합니다. 단, 해당 플레이어가 인공위성과 같은 월드에 있어야 합니다.
 - 해킹 : 적 슈트나 인공위성을 해킹하여 일정시간 동안 무력화시킬 수 있습니다. 복호화와 암호화 점수에 따라 해킹하는데 걸리는 시간과 유지 기간이 변동될 수 있습니다.
-[ENG]
-# Customizable IronMan DataPack
+
+# [ENG] Customizable IronMan DataPack
 This datapack works with Minecraft version 1.21.3!
 
 ## Status
